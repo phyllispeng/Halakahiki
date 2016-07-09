@@ -1,0 +1,15 @@
+nbproject/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
+bin/
+*.db
+threads.pool
+src/testThreads.c
+src/testThreads.h
+auth.log
+

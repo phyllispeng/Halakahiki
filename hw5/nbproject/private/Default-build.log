@@ -1,0 +1,10 @@
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/chatroom.c -o bin/chatroom.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/user.c -o bin/user.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/parser.c -o bin/parser.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/wrap.c -o bin/wrap.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/Hashmap.c -o bin/Hashmap.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/pineappleProtocol.c -o bin/pineappleProtocol.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/filemanager.c -o bin/filemanager.o
+gcc -Werror -Wall -g -std=gnu11 -pthread -c src/pass.c -o bin/pass.o
+gcc -Werror -Wall -g -std=gnu11 -pthread src/server.c bin/chatroom.o bin/user.o bin/parser.o bin/wrap.o bin/Hashmap.o bin/pineappleProtocol.o bin/filemanager.o bin/pass.o -o bin/server
+gcc -Werror -Wall -g -std=gnu11 -pthread src/client.c bin/chatroom.o bin/user.o bin/parser.o bin/wrap.o bin/Hashmap.o bin/pineappleProtocol.o bin/filemanager.o bin/pass.o -o bin/client

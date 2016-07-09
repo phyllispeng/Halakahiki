@@ -1,0 +1,41 @@
+Neal Beeken 	109069890
+Phyllis Peng
+Spiro Razis		110431154
+
+Errors:
+	None!
+
+Part 1:
+
+Part 2:
+
+Part 3:
+
+HW5+:
+
+
+
+Extra Credit:
+
+
+=======
+TODO:
+
+Can I introduce additional verbs to handle the progress of the upload/download? For example,
+Send UPLOAD Verb
+Receive confirmation that can upload via DAOLPU
+Begin upload:
+Loop:
+Send UPLOAD_2 Verb with x bytes
+Wait for DAOLPU_2 Verb confirmation that data was accepted; otherwise, an ERR message
+Show progress of upload
+Repeat until entire file sent
+
+
+
+[Jennifer Wong]
+Since we will be testing your program with your server for these functions,
+I will allow you to do this, but you must specify in your README,
+the specification for the added verb and the reasons WHY it was necessary to add it.
+
+writing with a single socket

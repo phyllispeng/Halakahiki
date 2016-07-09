@@ -1,0 +1,6 @@
+bin/
+a.out
+src/clientNeal.c
+src/clientTemp.c
+src/clientTemp.h
+src/server.c.orig
